@@ -33,7 +33,7 @@ for v in range(n*n):
     y += dy
 mid = (n+1)//2
 maxlen = len(str(grid[mid][mid]))
-fmt = "{:<" + str(maxlen) + "}"
+fmt = "{:>" + str(maxlen) + "}"
 for i in range(1, n+1):
     for j in range(1, n+1):
         v = grid[i][j] if ccw else grid[j][i]
